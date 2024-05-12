@@ -22,6 +22,11 @@ const Increment = () => {
             </button>
             </div>
 
+            <button className="">
+            <DeleteForeverRoundedIcon/>
+            </button>
+            </div>
+
             </div>
 
             </div>
