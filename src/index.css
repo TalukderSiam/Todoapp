@@ -5,9 +5,135 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(92, 43, 226, 0.638);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main_dev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 130px;
+}
+
+.center_name {
+  width: 90%; /* Adjusted for responsiveness */
+  max-width: 400px; /* Added max-width for larger screens */
+  height: 460px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 16px rgb(91, 4, 120);
+}
+
+h1{
+  background-color: blueviolet;
+  text-align: center;
+  color: white;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+input{
+  
+  border: none;
+  outline: none;
+  border-bottom: 3px solid blueviolet;
+  text-align: center;
+  flex: 1; /* Take up remaining space */
+ 
+}
+
+button {
+  margin-left: 10px; /* Adjusted for space between input and button */
+  background-color: blueviolet;
+  color: white;
+  border-radius: 50%; /* Make the button circular */
+  width: 40px; /* Set a fixed width to maintain circular shape */
+  height: 40px; /* Set a fixed height to maintain circular shape */
+  border: none; /* Remove default button border */
+  font-size: x-large;
+}
+
+button:hover {
+  background-color: green; /* Change color to green on hover */
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjustments for medium-sized devices */
+  .center_name {
+    width: 70%; /* Adjusted for responsiveness */
+  }
+  
+  .input-group {
+    margin: 30px 0; /* Adjusted for medium-sized devices */
+  }
+
+  input {
+    margin-left: 30px;
+    margin-right: 10px; /* Adjusted for medium-sized devices */
+    width: 70%; /* Adjusted for medium-sized devices */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Adjustments for large devices */
+  .center_name {
+    width: 50%; /* Adjusted for responsiveness */
+  }
+
+  .input-group {
+    margin: 40px 0; /* Adjusted for large devices */
+  }
+
+  input {
+    margin-right: 20px; /* Adjusted for large devices */
+    width: 60%; /* Adjusted for large devices */
+  }
+}
+
+
+li {
+  text-transform: capitalize;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.circle-icon {
+  background-color: purple;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+/* Hover effect */
+.circle-icon:hover {
+  background-color: red;
+}
+
+.text {
+  color: black;
+  text-transform: capitalize;
 }
